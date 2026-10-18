@@ -203,6 +203,13 @@
   .mark-only-demo { margin-top: 16px; }
   .stack-demo { margin-top: 16px; padding: 0 180px; }
   .long-note-demo { margin-top: 16px; padding: 0 0 92px; }
+  .block-demo {
+    margin-top: 16px;
+    margin-bottom: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
   .usage { margin-top: 200px; }
   .usage h2 { margin-top: 0; }
@@ -497,6 +504,34 @@
 &gt;
   ...
 &lt;/span&gt;</code></pre>
+  </div>
+
+  <h2>Blocks</h2>
+  <p class="palette-note">
+    Add <code>ann-block</code> alongside <code>ann</code> to annotate a
+    block element like paragraph, div, or section.
+  </p>
+  <div class="block-demo">
+    <quote
+      class="ann ann-block ann-w ann-purple"
+      data-note="Quite wise for the AI era"
+      style="width: 300px"
+    >
+      <i>
+        Mathematics is not about numbers, equations, computations, or
+        algorithms: it is about understanding
+      </i>
+      - Bill Thurston
+    </quote>
+  </div>
+  <div class="code-snippet code-snippet-multiline stack-code-snippet">
+    <pre><code class="language-html">&lt;quote
+class="ann <span class="ann ann-s ann-green" data-note="annotate block">ann-block</span> ann-w ann-purple"
+data-note="Quite wise for the AI era"
+&gt;
+Mathematics is not about numbers, equations, computations, or
+algorithms: it is about understanding - Bill Thurston
+&lt;/quote&gt;</code></pre>
   </div>
 
   <footer>MIT · <a href="https://github.com/syabro/neat-annotations" target="_blank" rel="noopener noreferrer">GitHub</a></footer>
