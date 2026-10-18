@@ -96,6 +96,15 @@ Add `ann-no-mark` when the target already has its own fill:
 
 Annotations can be nested to point at one target from different sides. Long notes wrap according to `--ann-label-max-width`. See the [demo](https://neat-annotations.syabro.com/) for both patterns.
 
+
+### Block annotation
+
+Use `ann-block` to annotate a whole block.
+
+```html
+<p class="ann ann-block ann-blue ann-w">A rather long paragraph we can also annotate</p>
+```
+
 ## Fine-tuning
 
 Set these variables directly on an annotated element:
